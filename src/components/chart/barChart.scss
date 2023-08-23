@@ -1,0 +1,40 @@
+.main-barchart{
+    border: 0.001px solid #e2dfdf;
+    margin: 10px;
+    display: flex;
+    .left-barchart{
+        flex: 2;
+        margin: 10px;
+        // border: 0.001px solid #e2dfdf;
+        height: max-content;
+        // padding: 20px;
+        .content-barChart{
+            border: 0.001px solid #e2dfdf;
+            
+            padding: 25px;
+            margin: 1px;
+            // :nth-child(1){
+            //     background-color: #e2dfdf;
+            // }
+            .head-barChart{
+                font-size: 30px;
+                margin-bottom: 5px;
+                
+            }
+            .con-barChart{
+                margin-top: 15px;
+                font-weight: 400;
+                font-size: 13.5px;
+                color: #a5a0a0;
+            }
+        }
+      
+    }
+    .report-chart{
+        margin: 10px;
+        flex: 6;
+        border: 0.001px solid #e2dfdf;
+        padding: 20px;
+    }
+
+}

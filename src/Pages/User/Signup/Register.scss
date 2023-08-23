@@ -1,0 +1,108 @@
+.register-main {
+    min-height:100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    /* background: linear-gradient(to right, #dfdddd 50%, #B42B51 50%); */
+    background: linear-gradient(to left, #dfdddd 10%, #AAB3D2 90%);
+    text-align: center;
+
+    
+  }
+
+  .login-contain{
+    height: 85vh;
+    width:70%;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7), rgba(236, 236, 236, 0.4));
+    border-radius: 1rem;
+    margin: 2rem auto;
+    box-shadow: 0.5rem 0.5rem 2rem -1rem #0da3df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .left-side,.right-side{
+    margin: 1rem ;
+    box-shadow: 0.5rem 0.5rem 2rem -1rem #ffffff;
+    height: 98%;
+    width: 100%;
+    
+    
+  }
+
+  .left-side{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .error{
+      color: red;
+      // padding: 10px;
+      margin: 10px;
+    }
+    // .buttons{
+    //   display: flex;
+    //   padding: 10px;
+    //   justify-content: space-between;
+    // }
+    .button{
+        margin: 5px;
+        // background-color: aqua;
+        .ui.button{
+            width: 290px;
+            background-color: #7252e7;
+            color: #e1e3eb;
+        }
+    }
+    
+  }
+
+
+  
+  label{
+    text-align: left;
+    
+  }
+ 
+
+  .main-login .login-contain .left-side input:focus {
+    outline: none;
+    border: none;
+  }
+
+  
+
+  
+  .main-login .login-contain .left-side input:hover {
+    outline: 0.5px solid #4dd6b6;
+          box-shadow: 2px 2px 9px -2px #4dd6b6;
+  }
+  
+
+input{
+  width: 300px;
+  border-radius: 10;
+  
+}
+
+// .left-side #sub_butt {
+//   width: 80%;
+//   background: #7874ca;
+//   color: white;
+//   cursor: pointer;
+//   border-color: #7874ca;
+//   padding: 0.5rem 1rem;
+//   -webkit-transition: all 0.2s ease;
+//   transition: all 0.2s ease;
+// //   margin-left: 10px;
+// background-color: #0da3df;
+// }
+
+
+
+img{
+  width: 70%;
+  height:112%
+}

@@ -1,0 +1,117 @@
+.productTable{
+    height: 600px;
+    padding: 20px;
+
+    .top{
+      margin-bottom: 10px;
+      // background-color: aqua;
+      margin-top: -10px;
+     
+      .ui.button{
+        // float: right;
+        margin-left: 70rem;
+        background-color: #7252e7;
+          width: 140px;
+          color: white;
+      }
+    }
+
+    .cellWithImage{
+        display: flex;
+        align-items: center;
+        
+
+        .cellImg{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+           
+            
+        } 
+    }
+    .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+
+  
+        &.InStock {
+          background-color: rgba(0, 128, 0, 0.05);
+          color: green;
+        }
+        &.OutOfStock {
+          background-color: rgba(255, 0, 0, 0.05);
+          color: crimson;
+        }
+      }
+
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        .icon{
+            // color: red;
+            font-size: 24px;
+            cursor: pointer;
+
+            &:nth-child(1){
+                color: black;
+            }
+            &:nth-child(2){
+                color: rgb(128, 123, 123);
+            }
+            &:nth-child(3){
+                color: rgb(238, 62, 62);
+            }
+        }
+      }
+      
+    // body.active-modal {
+    //     overflow-y: hidden;
+    //     overflow-x: hidden;
+    // }
+    
+    // .btn-modal {
+    //     padding: 10px 20px;
+    //     display: block;
+    //     margin: 100px auto 0;
+    //     font-size: 18px;
+    // }
+    
+    // .modal, .overlay {
+    //     width: 100vw;
+    //     height: 100vh;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     position: fixed;
+    // }
+    
+    // .overlay {
+    //     background: rgba(49,49,49,0.8);
+    // }
+    // .modal-content {
+    //     position: absolute;
+    //     top: 40%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     line-height: 1.4;
+    //     background: #f1f1f1;
+    //     padding: 14px 28px;
+    //     border-radius: 3px;
+    //     max-width: 600px;
+    //     min-width: 300px;
+    // }
+    
+    // .close-modal {
+    //     position: absolute;
+    //     top: 10px;
+    //     right: 10px;
+    //     padding: 5px 7px;
+    // }
+
+    
+    }

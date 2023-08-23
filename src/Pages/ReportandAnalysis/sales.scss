@@ -1,0 +1,81 @@
+.report{
+    display: flex;
+    width: 100%;
+    .reportContainer{
+        flex: 6;
+       
+
+        .report-main{
+            // background-color: rgb(255, 248, 248);
+           background-color: #F8F8F8;
+           height: 120px;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: -1px;
+
+            .report-info {
+                display: flex;
+                // align-items: center;
+                // justify-content: center;
+                
+
+                // background-color: #7451f8;
+                .ui.button {
+                    background-color: white;
+                    border-radius: 0.5rem;
+                    border: 0.5px solid rgb(247, 240, 240);
+                    cursor: pointer;
+                    padding: 10px;
+                    border-bottom: none;
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        font-size: 18px;
+                    }
+
+                    :active {
+                        border-bottom: none;
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .report-between{
+            background-color: aliceblue;
+            padding: 5px;
+            margin: 10px;
+            border: 0.001px solid #e2dfdf;
+            .calendarWrap {
+                display: inline-block;
+                position: relative;
+              }
+            .report-chart{
+                padding: 30px;
+            }
+
+        }
+
+
+
+        // .inputBox {
+        //     font-size: 22px;
+        //     padding: 5px 8px 4px 8px;
+        //     border-radius: 3px;
+        //     border: 1px solid #666;
+        //   }
+          
+          
+          
+        //   .calendarElement {
+        //     position: absolute;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     top: 40px;
+        //     border: 1px solid #ccc;
+        //     z-index: 999;
+        //   }
+    }
+}

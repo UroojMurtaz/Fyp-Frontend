@@ -1,0 +1,88 @@
+.profile_container {
+  display: flex;
+  // padding: 5px;
+
+  .profile_new_container {
+    flex: 6;
+    .profileContainer {
+      display: flex;
+      height: 100vh;
+      .right {
+        padding: 20px;
+        flex: 5;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+        .heading,.button,.image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            .ui.button{
+                background-color:#7252e7;
+                width: 200px;
+                color: white;
+               
+            }
+        }
+
+       
+
+        h1 {
+          color: rgba(0, 0, 0, 0.555);
+          font: 500 2.2vmax "Roboto";
+          //   transform: translateX(-10vmax) translateY(-2vmax);
+        }
+        img {
+          width: 16vmax;
+          height: 16vmax;
+          border-radius: 100%;
+          transition: all 0.5s;
+
+          img:hover {
+            transform: scale(1.05);
+          }
+          
+        }
+      }
+
+      .left {
+        flex: 5;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .name,.email,.joined,.orderBtn,.changeBtn{
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            margin: 20px;
+
+            .ui.button{
+                background-color: rgb(172, 189, 189);
+                width: 250px;
+                font-size: 14px;
+               
+            }
+
+        }
+
+        h4 {
+          color: black;
+          font: 400 1.2vmax "Roboto";
+        }
+        p {
+          color: rgba(12, 2, 5, 0.418);
+          font: 400 1vmax cursive;
+          // margin: 0.2vmax;
+          font-size: 18px;
+          margin: -10px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

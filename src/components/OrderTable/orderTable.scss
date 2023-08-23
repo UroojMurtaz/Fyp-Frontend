@@ -1,0 +1,57 @@
+.productTable{
+    height: 600px;
+    padding: 20px;
+
+    .cellWithImage{
+        display: flex;
+        align-items: center;
+        
+
+        .cellImg{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+           
+            
+        } 
+    }
+    .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+    
+        &.Completed {
+          background-color: rgba(0, 128, 0, 0.05);
+          color: green;
+        }
+        &.Processing {
+          background-color: rgba(255, 217, 0, 0.05);
+          color: goldenrod;
+        }
+        &.Cancelled {
+          background-color: rgba(255, 0, 0, 0.05);
+          color: crimson;
+        }
+      }
+
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        .icon{
+            // color: red;
+            font-size: 24px;
+            cursor: pointer;
+
+            &:nth-child(1){
+                color: black;
+            }
+            &:nth-child(2){
+                color: rgb(238, 62, 62);
+            }
+        }
+      }
+     
+}

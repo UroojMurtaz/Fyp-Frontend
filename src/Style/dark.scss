@@ -1,0 +1,110 @@
+.app.dark {
+    background-color: #222;
+    color: rgb(156, 156, 156);
+
+    .chartGrid {
+        stroke: rgb(228, 228, 228, 0.219);
+    }
+
+    .table {
+        background-color: #111;
+
+        .tableCell {
+            // color: rgb(156, 156, 156);
+            color: gray;
+        }
+    }
+
+    .navbar {
+        color: #999;
+        border-color: #333;
+
+        .search {
+            border-color: gray;
+
+            input {
+                color: #999;
+            }
+        }
+
+
+    }
+
+    .sidebar {
+        background-color: #111;
+        border-color: #333;
+
+        .top {
+            .logo {
+                color: #999;
+            }
+        }
+
+        hr {
+            border-color: #333;
+        }
+        ul{
+            li{
+                &:hover{
+                    background-color: #333;
+                }
+            .icon{
+                color: #999;
+            }
+            }
+        }
+    }
+    .userTable{
+        .datagrid{
+            color: gray;
+            border: none;
+            .viewButton,.deleteButton{
+                color: gray;
+                border: 1px dotted gray;
+                
+            }
+        }
+    }
+    .new{
+        .bottom{
+            .left{
+                .title,.media,.pricing,.inventory,.shipping,.variants,.category{
+                    background-color: #222;
+                    input,textarea{
+                    background-color: transparent;
+                    border-color: #999;
+                    color: #999;
+                    }
+                    .ui.header{
+                        color:rgb(156, 156, 156);
+                    }
+                    .ui.dividing.header{
+                        border-color: #999;
+                    }
+                    label{
+                        color: #999;
+                    }
+                    .select{
+                        select{
+                            background-color: transparent;
+                            border-color: #999;
+                            color: #999;
+                            &:hover{
+                                background-color: #333;
+                            }
+                            option{
+                                background-color: #333;
+                            }
+                        }
+                    }
+                    
+                    .ui.button{
+                        background-color: #999;
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+  
+}

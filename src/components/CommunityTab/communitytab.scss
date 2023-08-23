@@ -1,0 +1,13 @@
+.btnn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 5px
+  }
+  
+  .activee, .btnn:hover {
+    background-color: rgba(123, 86, 182, 0.651);
+    color: white;
+  }

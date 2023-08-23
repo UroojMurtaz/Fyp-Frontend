@@ -1,0 +1,391 @@
+.product {
+    display: flex;
+    width: 100%;
+
+    .productContainer {
+        flex: 6;
+
+        .main {
+            background-color: rgb(255, 255, 255);
+            padding: 25px;
+
+            .top {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+
+                .icon {
+                    font-size: 28px;
+                    color: #7451f8;
+                    margin-right: 10px;
+                }
+            }
+
+            .bottom {
+                padding: 25px;
+                background-color: white;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(167, 158, 158, 0.47);
+                border-radius: 1rem;
+
+                .header {
+                    width: 100%;
+                    padding: 10px;
+
+                    .content {
+                        // padding: 20px;
+                        display: flex;
+                        width: 100%;
+
+                        .left {
+                            flex: 3;
+
+                            // background-color: #7451f8;
+                            .image {
+                                // -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                                // box-shadow: 2px 4px 10px 1px rgba(167, 158, 158, 0.47);
+                                padding: 10px;
+                                background-color: rgb(255, 255, 255);
+                                width: 350px;
+                                margin-left: -20px;
+                                // height: 250px;
+                                // height: 450px;
+                                // box-sizing: border-box;
+                                // border: 0.2px solid black;
+
+                                .product-images-slider {
+                                    .swiper-slide {
+                                        padding-top: 100%;
+                                        overflow: hidden;
+                                        position: relative;
+
+                                        img {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            border-radius: 1rem;
+                                        }
+                                    }
+
+                                    .swiper-button-prev {
+                                        left: 10;
+                                        color: #000;
+                                    }
+
+                                    .swiper-button-next {
+                                        right: 0;
+                                        color: #000;
+                                    }
+                                }
+
+                                .product-images-slider-thumbs {
+                                    margin-top: 20px;
+
+                                    .swiper-slide {
+                                        cursor: pointer;
+                                        border: 1px solid #dddbdb;
+
+                                        &-thumb-active {
+                                            border-color: #ff0000;
+                                        }
+                                    }
+
+                                    &-wrapper {
+                                        width: 100%;
+                                        padding-top: 100%;
+                                        overflow: hidden;
+                                        position: relative;
+
+                                        img {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .between {
+                            flex: 7;
+                            padding: 10px;
+                            display: flex;
+
+                            // background-color: #7451f8;
+                            .left {
+                                flex: 4.5;
+
+                                // background-color: #7451f8;
+                                .star {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: -27px;
+
+                                    .rate {
+                                        // padding: 10px;
+                                        margin: 10px;
+                                    }
+                                }
+
+                                .desc {
+                                    padding: 10px;
+
+                                    p {
+                                        color: #7B7780;
+                                        font-size: 14px;
+                                    }
+
+                                    span {
+                                        color: #777777;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+
+                                    .var {
+                                        margin-top: 10px;
+
+                                        .icon {
+                                            font-size: 25px;
+                                            margin-right: 6px;
+
+                                            &:nth-child(1) {
+                                                color: #7451f8;
+                                            }
+
+                                            &:nth-child(2) {
+                                                color: #b14444;
+                                            }
+
+                                            &:nth-child(3) {
+                                                color: #f85167;
+                                            }
+
+                                            &:nth-child(4) {
+                                                color: #d45535;
+                                            }
+
+                                            &:nth-child(5) {
+                                                color: pink;
+                                            }
+
+                                            &:nth-child(6) {
+                                                color: #e065d6;
+                                            }
+
+                                        }
+                                    }
+
+                                    .status{
+                                        padding: 10px;
+                                        border-radius: 5px;
+                                        width:fit-content;
+                                        &.InStock{
+                                            color: green;
+                                            background-color: rgba(0, 128, 0, 0.151);
+                                        }
+                                        &.OutOfStock{
+                                            color: red;
+                                            background-color: rgba(255, 0, 0, 0.05);
+                                        }
+                                    }
+                                    .stock {
+                                        display: flex;
+
+                                        .avai,
+                                        .pending,
+                                        .inorder {
+                                            padding: 20px;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border: 0.2px solid lightgrey;
+                                            border-radius: 1rem;
+                                            flex-direction: column;
+                                            margin: 10px;
+
+                                            span {
+                                                display: flex;
+                                                color: #777777;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                        }
+
+
+                                    }
+                                }
+                            }
+
+                            .right {
+                                flex: 1;
+                                padding: 20px;
+                                // background-color: white;
+                                // -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                                // box-shadow: 2px 4px 10px 1px rgba(167, 158, 158, 0.47);
+                                // // width: 50px;
+                                // height: 300px;
+                                // border-radius: 1rem;
+                                // margin: 10px;
+
+                                .img {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-direction: column;
+
+                                    img {
+                                        width: 150px;
+                                        height: 150px;
+                                        border: 1px solid #000;
+                                        border-radius: 1rem;
+                                    }
+
+                                    span {
+                                        color: #7B7780;
+                                        font-size: 18px;
+                                        font-weight: 700;
+
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
+                }
+
+                .review {
+                    border: 0.5px solid rgb(247, 240, 240);
+                    // border-radius: 1rem;
+                    padding: 20px;
+
+
+                    .cellWrapper {
+                        display: flex;
+                        align-items: center;
+
+                        .detail {
+                            display: flex;
+                            
+                            // align-items: center;
+                            flex-direction: column;
+                            padding: 16px;
+
+                            // margin-bottom: 30px;
+                            p {
+                                color: #7B7780;
+                                font-size: 15px;
+                            }
+
+                            span {
+                                color: #777777;
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+
+                            .div {
+                                padding: 3px;
+                            }
+                        }
+
+                        .image {
+                            width: 85px;
+                            height: 85px;
+                            // border-radius: 50%;
+                            margin-right: 10px;
+                            object-fit: cover;
+                            border-radius: 1rem;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .ui.dividing.header {
+                        margin-top: -10px;
+                        padding: 15px;
+                        color: rgb(247, 240, 240);
+
+                    }
+                }
+
+                .information {
+                    border: 0.5px solid rgb(247, 240, 240);
+                    border-radius: 1rem;
+                    padding: 20px;
+
+                    .div {
+                        color: #7B7780;
+                        font-size: 15px;
+                        display: flex;
+                        align-items: center;
+
+                        // padding: 5px;
+                        .icon {
+                            font-size: 30px;
+                        }
+                    }
+
+                }
+
+                .detail {
+                    // background-color: #7451f8;
+                    display: flex;
+                    flex-direction: column;
+                    border: 0.5px solid rgb(247, 240, 240);
+                    border-radius: 1rem;
+                    padding: 20px;
+
+                    p {
+                        color: #7B7780;
+                        font-size: 15px;
+                        padding: 5px;
+                    }
+
+                    .div {
+                        color: #7B7780;
+                        font-size: 15px;
+                        display: flex;
+                        align-items: center;
+
+                        // padding: 5px;
+                        .icon {
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    // background-color: #7451f8;
+                    .ui.button {
+                        background-color: white;
+                        border-radius: 0.5rem;
+                        border: 0.5px solid rgb(247, 240, 240);
+                        cursor: pointer;
+                        padding: 10px;
+                        border-bottom: none;
+                        display: flex;
+                        align-items: center;
+
+                        .icon {
+                            font-size: 18px;
+                        }
+
+                        :active {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

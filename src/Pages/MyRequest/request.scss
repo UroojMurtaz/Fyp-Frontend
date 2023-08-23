@@ -1,0 +1,57 @@
+.Notification {
+    width: 100%;
+    display: flex;
+    .NotificationContainer {
+      flex: 6;
+      .request-container {
+        background-color: #f8f7fc;
+        width: 78%;
+        border-radius: 30px;
+        padding: 10px 10px 10px 10px;
+        margin-left: 10px;
+        .notificatio-top {
+          display: flex;
+          align-items: center;
+          padding: 10px 10px 10px 10px;
+          .cellImg {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+          }
+        }
+        .notification-between{
+          padding: 10px 10px 10px 10px;
+  
+          .Status{
+              padding: 5px;
+        border-radius: 5px;
+        margin-left: 1.5rem;
+              &.Accepted {
+                  background-color: rgba(0, 128, 0, 0.05);
+                  color: green;
+                }
+                &.Rejected {
+                  background-color: rgba(255, 0, 0, 0.05);
+                  color: crimson;
+                }
+          }
+        }
+  
+        .notification-bottom{
+          padding: 10px 10px 10px 10px;
+  
+          .admin_reply{
+              background-color: white;
+              
+              padding: 10px;
+              border-radius: 10px;
+          }
+        }
+  
+        
+      }
+    }
+  }
+  
